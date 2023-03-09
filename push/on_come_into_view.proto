@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package push;
+option go_package = "/;push";
+
+message OnComeIntoView{
+  uint32 PID = 1;
+  string Name = 2;
+  float X = 3;
+  float Z = 4;
+}

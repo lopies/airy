@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package login;
+option go_package = "/;login";
+
+message User{
+  string ID = 1; // User unique identifier
+  string NickName = 2; // Nicknames (can be repeated)
+  string Avatar = 3; //avatar
+  string Account = 4; // Account number (unique)
+  string PassWord = 5; // Password (length: not less than 8 characters)
+  string Phone = 6;
+  string Sex = 7; // gender
+  string Token = 8; // token
+  int64 CreateOn = 9;
+  int64 UpdateOn = 10;
+}

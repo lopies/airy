@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "/;pb";
+
+message Handshake{
+  string Token = 1;
+  string SpaceID = 2;
+  uint32 PID = 3;
+  string ServerID = 4;
+}
+
+message HandshakeACK{
+  string ServerID = 1;
+}

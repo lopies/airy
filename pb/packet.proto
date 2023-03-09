@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "type.proto";
+
+package pb;
+option go_package = "/;pb";
+
+message Packet{
+  Type Type = 1;//packet type
+  int32 RequestID = 2; //request packet id
+  int32 RequestCode = 3;//request code
+  int32 RouteCode = 4;//pushed route
+  int32 ErrorCode = 5;//if occur error
+  uint32 PID = 6;//player id
+  string SpaceID = 7;//space id
+  string SourceServerID = 8;//source server id
+  bytes Data = 9;//packet body
+}

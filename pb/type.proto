@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "/;pb";
+
+//packet type
+enum Type{
+  Handshake_ = 0;
+  HandshakeAck_ = 1;
+  Heartbeat_ = 2;
+  Request_ = 3;
+  Response_ = 4;
+  Push_ = 5;
+  Kick_ = 6;
+
+  Join = 7;
+  Leave = 8;
+}

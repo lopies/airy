@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package push;
+option go_package = "/;push";
+
+message OnCommonChat {
+  int32 Tp = 1; //1:global 2:neighbor
+  uint32 Pid = 2;
+  int64 Time = 3;
+  string Content = 4;
+}

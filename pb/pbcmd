@@ -1,0 +1,2 @@
+protoc-go-inject-tag -input=./grpc_cluster.pb.go
+protoc --go_out=plugins=grpc:. grpc_cluster.proto

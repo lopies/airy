@@ -1,0 +1,19 @@
+syntax = "proto3";
+import "packet.proto";
+
+package pb;
+option go_package = "/;pb";
+
+message Combination{
+  repeated uint32 PIDs = 1;
+  repeated  Packet Packets = 2;
+}
+
+message ServerCombination {
+  string ServerID = 1;
+  Combination Combination = 2;
+}
+
+message Combinations{
+  repeated Combination Combinations = 1;
+}

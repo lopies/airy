@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package push;
+option go_package = "/;push";
+
+message OnMove{
+  uint32 PID = 1;
+  float X = 2;
+  float Z = 3;
+}

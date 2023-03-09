@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BehaviorTree>
+    <Node Name="Composite" Method="Sequence">
+        <Node Name="Action" Method="EnterSpace">
+            <Node Name="Condition" Method="EnterSpaceCondition"></Node>
+        </Node>
+        <!-- 以下节点顺序有一个执行成功则返回 -->
+        <Node Name="Composite" Method="Selector">
+<!--            <Node Name="Action" Method="Move">-->
+<!--                <Node Name="Condition" Method="MoveCondition"></Node>-->
+<!--            </Node>-->
+<!--            <Node Name="Action" Method="GlobalChat">-->
+<!--                <Node Name="Condition" Method="GlobalChatCondition"></Node>-->
+<!--            </Node>-->
+            <Node Name="Action" Method="Delay">
+                <Node Name="Condition" Method="DelayCondition"></Node>
+            </Node>
+        </Node>
+    </Node>
+</BehaviorTree>

@@ -1,0 +1,15 @@
+syntax = "proto3";
+import "combination.proto";
+import "packet.proto";
+import "google/protobuf/empty.proto";
+
+package pb;
+option go_package = "/;pb";
+
+service AiryGate {
+  rpc PushToUsers(Combinations) returns(google.protobuf.Empty);
+}
+
+service AiryLogic {
+  rpc Request(Packet) returns (google.protobuf.Empty);
+}

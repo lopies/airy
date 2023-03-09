@@ -1,0 +1,14 @@
+-- ----------------------------
+-- Table structure for airy_user
+-- ----------------------------
+DROP TABLE IF EXISTS `airy_user`;
+CREATE TABLE `airy_user` (
+  `id` varchar(100) CHARACTER SET utf16 COLLATE utf16_general_ci NOT NULL,
+  `text` varbinary(255) NOT NULL,
+  `create_on` bigint NOT NULL,
+  `update_on` bigint NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_index` (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+SET FOREIGN_KEY_CHECKS = 1;

@@ -1,0 +1,10 @@
+#environment Configure the corresponding test environment, which can be dev,beta, or release
+environment: "dev"
+#robot_num Number of robots
+player_num: 2200
+#uid_pre uid start (make sure each person is unique)
+pid_pre: 800111
+#space_id SpaceId
+space_id: "6389bbfc1200b2c13d58b171"
+#level Log level
+log_level: "error"
