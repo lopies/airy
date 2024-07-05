@@ -20,7 +20,6 @@
 
 package component
 
-import "C"
 import (
 	"fmt"
 	"github.com/airy/config"
