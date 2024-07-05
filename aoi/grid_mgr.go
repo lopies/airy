@@ -109,6 +109,7 @@ func (g *GridAOIManager) Move(p *player.Player, x, z float32) {
 		// Add pid to a new grid
 		g.addPIDToGrID(p.PID, newGID)
 	}
+	p.X, p.Z = x, z
 }
 
 // AllPlayers get information on all players
